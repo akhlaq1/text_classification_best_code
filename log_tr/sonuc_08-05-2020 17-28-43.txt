@@ -1,0 +1,131 @@
+Dataset Dosyasý:
+['trmails.csv']
+
+Satýr ve Sütun Sayýsý
+(1000, 2)
+Mail ve Spam Mail Sayýlarý:
+
+Mail Sayýsý:
+500
+
+Spam Sayýsý:
+500
+
+Kolon Adlarý
+Index(['text', 'spam'], dtype='object')
+
+(Tekrarsýz) Satýr ve Sutün Sayýsý:
+(923, 2)
+
+Her bir kolon için eksik/None veri sayýsý:
+text    0
+spam    0
+dtype: int64
+
+Tokenizasyon:
+0    [Asiltane, Zeytinyaðý, Yýldýzlý, deðil, Natürel, Sýzma, ZeytinyaðýAsiltanenin, özel, soðuk, sýkým, natürel, zeytinyaðý, þimdi, EvdeKal, koduyla, 20, indirimli]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+1    [Piyasaya, yeni, sunulan, RTX, özellikli, Minecraft, Windows, 10, Beta, dünyadaki, Minecraft, oyuncularýna, nefes, kesen, gerçek, zamanlý, ray, tracing, özelliði, gerçekçi, malzemeler, NVIDIA, DLSS, 20’ý, saðlýyor, NVIDIA, GeForce, RTX, GPU’larla, hayata, geçirilen, gerçekçi, gölgeleri, aydýnlatmayý, canlý, renkleri, doðal, bir, þekilde, etrafýný, yansýtan, sularý, parlak, dokularý, deneyimleyinBugün, beta, sürüme, katýlarak, ray, tracing, özelliðinin, Minecraft’a, kattýðý, büyük, fark, yaratan, olanaklarý, sergileyen, altý, yeni, Minecraft, dünyasýný, keþfedin, RTX, özellikli, Minecraft, Windows, 10, Beta, oluþturacaklarýnýzý, görmek, sabýrsýzlanýyoruz]
+2    [AdsoyadCOMTR, Domain, Þimdi, Sadece, 399, Belgesiz, Kayýt, 50, Ýndirim, Hakan, adsoyadcomtr, alan, adýnýzý, 50, ÝNDÝRÝMLÝ, BELGESÝZ, kayýt, edin, gönderiyi, düzgün, görüntüleyemiyorsanýz, lütfen, TIKLAYIN]                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+3    [Birlikten, Kuvvet, Doðar, diyerek, ülkemizin, can, damarý, KOBÝ’lerimiz, toplam, 80, milyon, TL, deðerinde, “Trendyol, KOBÝ, Destek”, paketini, baþlatýyoruz, Ülke, olarak, içinden, geçtiðimiz, zor, dönemde, sizlerin, evlerinde, saðlýkla, kalmasý, KOBÝ’lerimizle, beraber, gücümüzle, çalýþmaya, devam, ediyoruz, Ülke, ekonomisine, katkýsý, büyük, bizi, yapan, KOBÝ’lerimize, yürekten, teþekkür, ediyor, zor, günleri, birlikte, aþacaðýmýza, inanýyoruz, KOBÝLERÝMÝZÝN, ÜRÜNLERÝ, ÝÇÝN, Saygýlarýmýzla, Trendyol]                                                                                                                                                          
+4    [ÖDÜLLÜ, GEFORCE, DÝZÜSTÜ, BÝLGÝSAYARLARA, YÜKSELTÝN, NVIDIA, GeForce, oyunculara, içerik, üreticilerine, yönelik, dünyanýn, hýzlý, dizüstü, bilgisayarlarýna, güç, kazandýrýyor, Ortalama, bir, dizüstü, bilgisayarýn, 10, katýna, kadar, performans, sunan, güçlü, ince, tasarýmlara, yükseltin]                                                                                                                                                                                                                                                                                                                                                                                    
+Name: text, dtype: object
+
+Metin bir token sayým matrisine dönüþtürüldü.
+
+Traning %80 / Test %20 setleri tamamlandý.
+
+Message_Bow Shape:
+(923, 21840)
+
+Yazdýrýlan Tahmini Deðerler:
+[0 0 1 0 1 1 0 1 1 0 1 1 0 0 1 0 1 0 1 1 0 1 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0
+ 0 1 1 0 1 0 1 0 1 0 1 1 0 1 1 1 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+ 1 1 1 0 0 0 1 1 0 0 1 1 1 0 1 0 1 1 1 0 1 0 0 1 1 0 1 1 1 0 1 0 0 1 1 1 1
+ 0 1 0 1 0 1 0 0 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 0 0 1 1 0 1 0 0 0 1 1 0 0
+ 1 1 0 1 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 1 0 0 1 0 1 0 0 1 1 0 0 0
+ 1 0 0 0 1 1 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 0 0 1
+ 1 0 1 1 1 1 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 1 0 1 1 0 1 0 0 1 1 1 1 1
+ 1 1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0
+ 1 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 0
+ 1 0 1 1 0 0 0 1 1 1 1 0 1 1 0 0 1 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 1 0 0 0 0
+ 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
+ 1 0 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 0 0 0 1 0 0 1 1
+ 0 0 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 1 1 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 0 0 1
+ 0 1 0 0 1 0 1 1 1 1 1 0 1 1 0 1 1 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 1 0
+ 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1
+ 1 0 0 0 0 0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 0 0 1 1 0 0 0 1 1 0 0 1 0 1 1 1 1
+ 0 1 1 1 0 1 0 1 1 0 1 0 1 1 0 0 1 0 0 1 1 1 0 1 0 0 1 0 1 1 1 0 0 1 1 0 1
+ 0 1 1 0 0 1 0 1 0 1 0 0 1 0 1 1 1 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 1 0
+ 0 1 0 1 1 1 0 0 0 1 0 1 0 1 1 0 0 0 1 1 0 0 0 0 0 1 1 1 1 0 0 0 1 1 0 0 1
+ 0 0 0 1 0 1 0 0 0 0 0 1 1 0 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 0]
+
+Yazdýrýlan Gerçek Deðerler:
+[0 0 1 0 1 1 0 1 1 0 1 1 0 0 1 0 1 0 1 1 0 1 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0
+ 0 1 1 0 1 0 1 0 1 0 1 1 0 1 1 1 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+ 1 1 1 0 0 0 1 1 0 0 1 1 1 0 1 0 1 1 1 0 1 0 0 1 1 0 1 1 1 0 1 0 0 1 1 1 1
+ 0 1 0 1 0 1 0 0 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 0 0 1 1 0 1 0 0 0 1 1 0 0
+ 1 1 0 1 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 1 0 0 1 0 1 0 0 1 1 0 0 0
+ 1 0 0 0 1 1 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 0 0 1
+ 1 0 1 1 1 1 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 1 0 1 1 0 1 0 0 1 1 1 1 1
+ 1 1 0 0 0 1 0 0 1 0 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0
+ 1 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 0
+ 1 0 1 1 0 0 0 1 1 1 1 0 1 1 0 0 1 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 1 0 0 0 0
+ 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
+ 1 0 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 0 0 0 1 0 1 1 1
+ 0 0 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 1 1 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 0 0 1
+ 0 1 0 0 1 0 1 1 1 1 1 0 1 1 0 1 1 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 1 0
+ 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1
+ 1 0 0 0 0 0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 0 0 1 1 0 0 0 1 1 0 0 1 0 1 1 1 1
+ 0 1 1 1 0 1 0 1 1 0 1 0 1 1 0 0 1 0 0 1 1 1 0 1 0 0 1 0 1 1 1 0 0 1 1 0 1
+ 0 1 1 0 0 1 0 1 0 1 0 0 1 0 1 1 1 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 1 0
+ 0 1 0 1 1 1 0 0 0 1 0 1 0 1 1 0 0 0 1 1 0 0 0 0 0 1 1 1 1 0 0 0 1 1 0 0 1
+ 0 0 0 1 0 1 0 0 0 0 0 1 1 0 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 0]
+
+
+Sýnýflandýrma Raporu:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00       389
+           1       1.00      0.99      1.00       349
+
+    accuracy                           1.00       738
+   macro avg       1.00      1.00      1.00       738
+weighted avg       1.00      1.00      1.00       738
+
+
+Karýþýklýk Matrisi:[[389   0]
+ [  2 347]]
+
+Accuracy: 0.997289972899729
+
+Modelin Test Datasete göre deðerlendirilmesi:
+
+Tahmini deðer: 
+[0 1 1 0 1 1 0 1 0 1 0 1 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 0 1 1 0 1 1 0 0 1 0
+ 0 0 0 1 1 1 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 0 0 1 0 0 1 0 1 0 0
+ 0 1 1 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 1 1 0 0 0 0 0 0 0 1 0 1 0 0 1 1 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 1 1 0 1 1 1 1 0 1 1 1 1 1 0 0 1 0 1 0 1
+ 1 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 0 1 0 1]
+
+Gerçek deðer: 
+[0 1 1 0 1 1 0 1 1 1 0 1 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 0 1 1 0 1 1 0 0 1 0
+ 0 0 0 1 1 1 0 0 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 1 0 1 0 0 1 0 1 0 0
+ 0 1 1 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 1 1 0 0 0 0 1 1 0 1 0 1 0 0 0 1 1 0 0
+ 0 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1 0 1 1 0 1 1 1 1 0 1 1 1 1 1 0 0 1 0 1 0 1
+ 1 1 0 0 0 1 0 1 0 0 0 1 0 0 0 1 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 0 1 0 1]
+
+              precision    recall  f1-score   support
+
+           0       0.93      0.99      0.96       100
+           1       0.99      0.91      0.94        85
+
+    accuracy                           0.95       185
+   macro avg       0.96      0.95      0.95       185
+weighted avg       0.95      0.95      0.95       185
+
+
+Karýþýklýk Matrisi: 
+[[99  1]
+ [ 8 77]]
+
+Accuracy: 0.9513513513513514

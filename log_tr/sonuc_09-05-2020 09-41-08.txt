@@ -1,0 +1,136 @@
+Dataset Dosyası:
+['trmails.csv']
+
+Satır ve Sütun Sayısı
+(1000, 2)
+
+Mail ve Spam Mail Sayıları:
+Mail Sayısı:
+500
+Spam Sayısı:
+500
+
+Kolon Adları
+Index(['text', 'spam'], dtype='object')
+
+(Tekrarsız) Satır ve Sutün Sayısı:
+(923, 2)
+
+Mail ve Spam Mail Sayıları:
+Mail Sayısı:
+489
+Spam Sayısı:
+434
+
+Her bir kolon için eksik/None veri sayısı:
+text    0
+spam    0
+dtype: int64
+
+Tokenizasyon:
+0    [Asiltane, Zeytinyağı, Yıldızlı, değil, Natürel, Sızma, ZeytinyağıAsiltanenin, özel, soğuk, sıkım, natürel, zeytinyağı, şimdi, EvdeKal, koduyla, 20, indirimli]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+1    [Piyasaya, yeni, sunulan, RTX, özellikli, Minecraft, Windows, 10, Beta, dünyadaki, Minecraft, oyuncularına, nefes, kesen, gerçek, zamanlı, ray, tracing, özelliği, gerçekçi, malzemeler, NVIDIA, DLSS, 20’ı, sağlıyor, NVIDIA, GeForce, RTX, GPU’larla, hayata, geçirilen, gerçekçi, gölgeleri, aydınlatmayı, canlı, renkleri, doğal, bir, şekilde, etrafını, yansıtan, suları, parlak, dokuları, deneyimleyinBugün, beta, sürüme, katılarak, ray, tracing, özelliğinin, Minecraft’a, kattığı, büyük, fark, yaratan, olanakları, sergileyen, altı, yeni, Minecraft, dünyasını, keşfedin, RTX, özellikli, Minecraft, Windows, 10, Beta, oluşturacaklarınızı, görmek, sabırsızlanıyoruz]
+2    [AdsoyadCOMTR, Domain, Şimdi, Sadece, 399, Belgesiz, Kayıt, 50, İndirim, Hakan, adsoyadcomtr, alan, adınızı, 50, İNDİRİMLİ, BELGESİZ, kayıt, edin, gönderiyi, düzgün, görüntüleyemiyorsanız, lütfen, TIKLAYIN]                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+3    [Birlikten, Kuvvet, Doğar, diyerek, ülkemizin, can, damarı, KOBİ’lerimiz, toplam, 80, milyon, TL, değerinde, “Trendyol, KOBİ, Destek”, paketini, başlatıyoruz, Ülke, olarak, içinden, geçtiğimiz, zor, dönemde, sizlerin, evlerinde, sağlıkla, kalması, KOBİ’lerimizle, beraber, gücümüzle, çalışmaya, devam, ediyoruz, Ülke, ekonomisine, katkısı, büyük, bizi, yapan, KOBİ’lerimize, yürekten, teşekkür, ediyor, zor, günleri, birlikte, aşacağımıza, inanıyoruz, KOBİLERİMİZİN, ÜRÜNLERİ, İÇİN, Saygılarımızla, Trendyol]                                                                                                                                                          
+4    [ÖDÜLLÜ, GEFORCE, DİZÜSTÜ, BİLGİSAYARLARA, YÜKSELTİN, NVIDIA, GeForce, oyunculara, içerik, üreticilerine, yönelik, dünyanın, hızlı, dizüstü, bilgisayarlarına, güç, kazandırıyor, Ortalama, bir, dizüstü, bilgisayarın, 10, katına, kadar, performans, sunan, güçlü, ince, tasarımlara, yükseltin]                                                                                                                                                                                                                                                                                                                                                                                    
+Name: text, dtype: object
+
+Metin bir token sayım matrisine dönüştürüldü.
+
+Traning %80 / Test %20 setleri tamamlandı.
+
+Message_Bow Shape:
+(923, 21840)
+
+Yazdırılan Tahmini Değerler:
+[0 0 1 0 1 1 0 1 1 0 1 1 0 0 1 0 1 0 1 1 0 1 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0
+ 0 1 1 0 1 0 1 0 1 0 1 1 0 1 1 1 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+ 1 1 1 0 0 0 1 1 0 0 1 1 1 0 1 0 1 1 1 0 1 0 0 1 1 0 1 1 1 0 1 0 0 1 1 1 1
+ 0 1 0 1 0 1 0 0 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 0 0 1 1 0 1 0 0 0 1 1 0 0
+ 1 1 0 1 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 1 0 0 1 0 1 0 0 1 1 0 0 0
+ 1 0 0 0 1 1 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 0 0 1
+ 1 0 1 1 1 1 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 1 0 1 1 0 1 0 0 1 1 1 1 1
+ 1 1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0
+ 1 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 0
+ 1 0 1 1 0 0 0 1 1 1 1 0 1 1 0 0 1 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 1 0 0 0 0
+ 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
+ 1 0 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 0 0 0 1 0 0 1 1
+ 0 0 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 1 1 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 0 0 1
+ 0 1 0 0 1 0 1 1 1 1 1 0 1 1 0 1 1 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 1 0
+ 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1
+ 1 0 0 0 0 0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 0 0 1 1 0 0 0 1 1 0 0 1 0 1 1 1 1
+ 0 1 1 1 0 1 0 1 1 0 1 0 1 1 0 0 1 0 0 1 1 1 0 1 0 0 1 0 1 1 1 0 0 1 1 0 1
+ 0 1 1 0 0 1 0 1 0 1 0 0 1 0 1 1 1 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 1 0
+ 0 1 0 1 1 1 0 0 0 1 0 1 0 1 1 0 0 0 1 1 0 0 0 0 0 1 1 1 1 0 0 0 1 1 0 0 1
+ 0 0 0 1 0 1 0 0 0 0 0 1 1 0 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 0]
+
+Yazdırılan Gerçek Değerler:
+[0 0 1 0 1 1 0 1 1 0 1 1 0 0 1 0 1 0 1 1 0 1 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0
+ 0 1 1 0 1 0 1 0 1 0 1 1 0 1 1 1 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+ 1 1 1 0 0 0 1 1 0 0 1 1 1 0 1 0 1 1 1 0 1 0 0 1 1 0 1 1 1 0 1 0 0 1 1 1 1
+ 0 1 0 1 0 1 0 0 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 0 0 1 1 0 1 0 0 0 1 1 0 0
+ 1 1 0 1 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 1 0 0 1 0 1 0 0 1 1 0 0 0
+ 1 0 0 0 1 1 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 0 0 1
+ 1 0 1 1 1 1 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 1 0 1 1 0 1 0 0 1 1 1 1 1
+ 1 1 0 0 0 1 0 0 1 0 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0
+ 1 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 0
+ 1 0 1 1 0 0 0 1 1 1 1 0 1 1 0 0 1 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 1 0 0 0 0
+ 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
+ 1 0 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 0 0 0 1 0 1 1 1
+ 0 0 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 1 1 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 0 0 1
+ 0 1 0 0 1 0 1 1 1 1 1 0 1 1 0 1 1 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 1 0
+ 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1
+ 1 0 0 0 0 0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 0 0 1 1 0 0 0 1 1 0 0 1 0 1 1 1 1
+ 0 1 1 1 0 1 0 1 1 0 1 0 1 1 0 0 1 0 0 1 1 1 0 1 0 0 1 0 1 1 1 0 0 1 1 0 1
+ 0 1 1 0 0 1 0 1 0 1 0 0 1 0 1 1 1 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 1 0
+ 0 1 0 1 1 1 0 0 0 1 0 1 0 1 1 0 0 0 1 1 0 0 0 0 0 1 1 1 1 0 0 0 1 1 0 0 1
+ 0 0 0 1 0 1 0 0 0 0 0 1 1 0 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 0]
+
+
+Sınıflandırma Raporu:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00       389
+           1       1.00      0.99      1.00       349
+
+    accuracy                           1.00       738
+   macro avg       1.00      1.00      1.00       738
+weighted avg       1.00      1.00      1.00       738
+
+
+Karışıklık Matrisi:[[389   0]
+ [  2 347]]
+
+Accuracy: 0.997289972899729
+
+Modelin Test Datasete göre değerlendirilmesi:
+
+Tahmini değer: 
+[0 1 1 0 1 1 0 1 0 1 0 1 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 0 1 1 0 1 1 0 0 1 0
+ 0 0 0 1 1 1 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 0 0 1 0 0 1 0 1 0 0
+ 0 1 1 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 1 1 0 0 0 0 0 0 0 1 0 1 0 0 1 1 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 1 1 0 1 1 1 1 0 1 1 1 1 1 0 0 1 0 1 0 1
+ 1 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 0 1 0 1]
+
+Gerçek değer: 
+[0 1 1 0 1 1 0 1 1 1 0 1 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 0 1 1 0 1 1 0 0 1 0
+ 0 0 0 1 1 1 0 0 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 1 1 1 0 1 0 0 1 0 1 0 0
+ 0 1 1 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 1 1 0 0 0 0 1 1 0 1 0 1 0 0 0 1 1 0 0
+ 0 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1 0 1 1 0 1 1 1 1 0 1 1 1 1 1 0 0 1 0 1 0 1
+ 1 1 0 0 0 1 0 1 0 0 0 1 0 0 0 1 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 0 1 0 1]
+
+              precision    recall  f1-score   support
+
+           0       0.93      0.99      0.96       100
+           1       0.99      0.91      0.94        85
+
+    accuracy                           0.95       185
+   macro avg       0.96      0.95      0.95       185
+weighted avg       0.95      0.95      0.95       185
+
+
+Karışıklık Matrisi: 
+[[99  1]
+ [ 8 77]]
+
+Accuracy: 0.9513513513513514
